@@ -219,9 +219,12 @@ h4{
     font-weight:700;
 
 }
+.div-sub{
+    margin-bottom: 15px;
+}
 .input-3[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
 footer{
     margin-top: 60px;
