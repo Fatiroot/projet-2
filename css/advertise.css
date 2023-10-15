@@ -79,7 +79,7 @@ nav a:hover {
 }
 .blog-1{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -95,8 +95,8 @@ nav a:hover {
     font-size: 50px;
     
 }
-img{
- width: 50%;
+.img-1{
+ max-width: 50%;
 }
 .texte-1{
     margin:auto;
@@ -133,11 +133,12 @@ img{
 .grid-container{
     background-color: #F9FAFC;
     margin-top: 100px;
-    padding: 10px;
+    padding: 140px;
     display: grid;
-    grid-template-columns : repeat(auto-fit, minmax(390px ,auto));
-    gap: 100px;
-   justify-content: center;
+    grid-template-columns : repeat(auto-fit , minmax(400px ,auto));
+    gap: 60px;
+
+  
 }
 .itm1{
     display: flex;
@@ -251,6 +252,12 @@ footer{
         text-align: center;
         font-size: 20px;
     }
+}
+@media (max-width:650px) {
+    .img-1{
+        max-width: 20%;
+    }
+    
 }
 
 
