@@ -71,13 +71,14 @@ nav a:hover {
 }
 .wrapper-init{
     background-color: #FFF5ED;
+    width: 100%;
 }
 .wrapper-1{
     display: flex;
     margin-top: 90px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 80px;
-   
 
 }
 .container-1{
@@ -96,6 +97,9 @@ nav a:hover {
 .text-2{
     font-size: 18px;
 }
+.container-1-img{
+ max-width: 100%;
+}
 .grid-continaire{
    display: grid;
    grid-template-columns: auto auto;
@@ -113,6 +117,7 @@ nav a:hover {
 .wrapper-2{
     margin-top: 100px;
     display: flex ;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .text-3{
@@ -141,6 +146,7 @@ nav a:hover {
 .blog{
     padding-top: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     gap: 30px;
     padding-bottom: 100px;
@@ -157,17 +163,21 @@ nav a:hover {
 }
 .wrapper{
     background-color: #F4ECE5;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px, auto));
     align-items: center;
     
 } 
  .container{
     background-color: white;
    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
    padding-top: 40px ;
    padding-bottom: 40px ;
    padding-left: 60px ;
-   padding-right: 60px ;
+   padding-right: 60px ; 
    gap: 80px;
 } 
 
@@ -189,10 +199,13 @@ nav a:hover {
     font-weight:700;
 
 }
-.input-3{
-    background-color: #D4DAE2;
-    border: #fff;
+.div-sub{
+    margin-bottom: 15px;
 }
+.input-3[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
 footer{
     margin-top: 60px;
 }
@@ -225,3 +238,31 @@ footer{
     align-items: center;
     gap:20px;
 } 
+@media (max-width:453px) {
+    .grid-continaire{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+     }    
+     .text-1{
+        font-size: 30px;
+    
+   }
+   .paragraphe-1{
+    font-size: 16px;
+}
+.text-1{
+    font-size: 30px;
+
+}
+.paragraphe-1{
+    font-size: 16px;
+}
+.text-3{
+    font-size: 30px;
+}
+.paragraphe-2{
+    font-size: 20px;
+    line-height: 2;
+}
+}

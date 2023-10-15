@@ -77,11 +77,15 @@ nav a:hover {
     width: 100%;
 }
 .box-1{
-    
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
 
+}
+.box-1-img{
+    max-width: 100%;
 }
 .texte-1{
     font-size: 60px;
@@ -95,13 +99,14 @@ nav a:hover {
    
 }
 .blog-2{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-     width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+     width: 100%;
      align-items: center;
-     margin: auto;
-
+    justify-content: center;
+}
+.blog-2-img{
+    max-width: 100%;
 }
 .form-1{
     background-color: #93B8F2;
@@ -109,7 +114,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-   
+    padding-inline: 43px;
 
 }
 .form-1> h1{
@@ -117,6 +122,7 @@ nav a:hover {
     font-size: 60px;
     text-align: center;
     color: white;
+    margin-bottom: 10px;
 }
 .label{
     font-size: 30px;
@@ -129,19 +135,19 @@ nav a:hover {
    height: 80px;
    border-radius: 20px;
    margin-bottom: 30px;
-   margin-left: 100px;
+   margin-inline: auto;
+  
 }
 textarea{
     border: 2px;
-   width: 470px;
+   width: 457px;
    height: 300px;
    border-radius: 20px;
    margin-bottom: 50px;
-   margin-left: 100px;
+   margin-inline: auto;
+   font-size: 20px;
 }
-.int-1{
-    font-size: 20px;
-}
+
 .int-2{
     border: 2px;
     width: 200px;
@@ -154,53 +160,59 @@ textarea{
     margin-left: 220px;
     transition: ease .20s;
     cursor: pointer;
+    margin-inline: auto;
+
 }
 .int-2:hover{
     transform: scale(1.1);
     background-color: rgb(61, 59, 59);
 }
 .wrapper{
-   background-color: #F4ECE5;
-   display: grid;
-   grid-template-columns: repeat(auto-fit , minmax(350px, auto));
-   align-items: center;
-   
+    background-color: #F4ECE5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px, auto));
+    align-items: center;
+    
 } 
-.container{
-   background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 40px ;
-  padding-bottom: 40px ;
-  padding-left: 60px ;
-  padding-right: 60px ; 
-  gap: 80px;
+ .container{
+    background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   padding-top: 40px ;
+   padding-bottom: 40px ;
+   padding-left: 60px ;
+   padding-right: 60px ; 
+   gap: 80px;
 } 
 
 .input-1{
-   background-color: #D4DAE2;
-   padding: 16px;
-   width: 250px;
-   border: #fff;
-   border-radius: 10px;
+    background-color: #D4DAE2;
+    padding: 16px;
+    width: 250px;
+    border: #fff;
+    border-radius: 10px;
 
 }
 .input-2{
-   background-color:#DB4A87;
-   padding: 16px;
-   width: 100px;
-   border: #fff;
-   border-radius: 5px;
-   color: #fff;
-   font-weight:700;
+    background-color:#DB4A87;
+    padding: 16px;
+    width: 100px;
+    border: #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-weight:700;
+    
 
 }
-.input-3{
-   background-color: #D4DAE2;
-   border: #fff;
+.div-sub{
+    margin-bottom: 15px;
 }
+.input-3[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
 footer{
     margin-top: 60px;
 }
@@ -233,3 +245,41 @@ footer{
     align-items: center;
     gap:20px;
 } 
+@media (max-width:400px) {
+    .texte-1{
+        font-size: 30px;
+    }
+    .paragraphe-1{
+        font-size: 20px;
+    }
+    .form-1> h1{
+        font-size: 30px;
+    }
+    .label{
+        font-size: 16px;
+
+    }
+    .int-1{
+       border: 2px;
+       width: 300px;
+       height: 50px;
+       border-radius: 20px;
+       margin-bottom: 30px;
+      margin-inline: auto;
+        }
+    textarea{
+        border: 2px;
+       width: 300px;
+       height: 150px;
+        font-size: 20px;
+    }
+    
+    .int-2{
+        border: 2px;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+}

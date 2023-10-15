@@ -86,6 +86,9 @@ nav a:hover {
     padding-left: 50px;
    
 }
+.blog-1-img{
+    max-width: 100%;
+}
 .blog-titre {
     display: flex;
     flex-direction: column;
@@ -131,13 +134,15 @@ nav a:hover {
     font-size: 25px;
 }
 .grid-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #F9FAFC;
     margin-top: 100px;
-    padding: 140px;
+    margin-inline: 100px;
     display: grid;
     grid-template-columns : repeat(auto-fit , minmax(400px ,auto));
     gap: 60px;
-
+    max-width: 100%;
   
 }
 .itm1{
@@ -188,10 +193,13 @@ nav a:hover {
     font-weight:700;
 
 }
-.input-3{
-    background-color: #D4DAE2;
-    border: #fff;
+.div-sub{
+    margin-bottom: 15px;
 }
+.input-3[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
 footer{
     margin-top: 60px;
 }
