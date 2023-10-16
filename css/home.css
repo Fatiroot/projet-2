@@ -81,7 +81,7 @@ nav a:hover {
     text-align: center;
    
 }
-.titre1 h3{
+.titre1 p{
     font-size: 25px;
     margin-top: 90px;
     text-align: center;
@@ -142,8 +142,8 @@ h2{
     text-align: center;
 
 }
-h4{  
-     font-size: 25px;
+.paragraphe{  
+     font-size: 20px;
     margin-top: 90px;
     text-align: center;
 }
@@ -272,7 +272,7 @@ footer{
     .titre1 h1{
         font-size: 30px;
     }
-    .titre1 h3{
+    .titre1 p{
         font-size: 20px;
     }
     .button{
@@ -297,7 +297,7 @@ h2{
     text-align: center;
 
 }
-h4{  
+.paragraphe{  
      font-size: 20px;
     margin-top: 90px;
     text-align: center;
