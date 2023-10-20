@@ -314,9 +314,7 @@ samp {
    .container-1{
     gap: 20px;
    }
-    .container-1-img {
-        display: none;
-    }
+  
     .grid-continaire {
         display: flex;
         flex-direction: column;
@@ -366,6 +364,9 @@ samp {
     .wrapper div img {
         display: none;
     }
+    .blog{
+        padding: 10px;
+    }
 
     .container {
         background-color: #F4ECE5;
@@ -391,6 +392,28 @@ samp {
 
     }
     .list{
+        padding-left: 10px;
         width: 40%;
     }
+}
+@media (max-width:1000px) {
+    .wrapper div img {
+        display: none;
+    }
+    .container {
+        background-color: #F4ECE5;
+        gap: 20px;
+    }
+    .wrapper{
+        display: block;
+    }
+
+
+}
+@media (max-width:1315px){
+    .container-1-img{
+        display: none;
+    }
+
+
 }
