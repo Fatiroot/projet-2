@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-  
+    box-sizing: border-box;
+   
 } 
 .header {
     position: fixed;
@@ -17,16 +19,20 @@
     align-items: center;
     z-index: 999;
     background-color: #fff;
-} 
+ }
+
 a {
     text-decoration: none;
 } 
-ul {
-    display: flex;
-    list-style: none;
-}
 img{
     max-width: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between; 
 }
 .logo{
     display: flex;
@@ -41,29 +47,48 @@ img{
 .logo > a {
     margin-right: 100px;
 }
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
 li{
     padding-left: 30px;
 }
-nav{
-    display: flex;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    justify-content: space-between;
-}
+
 nav a {
-    position: relative;
+     position: relative; 
     margin-left: 0px;
     color: black;
     font-size: 20px;
     transition: 0.3s;
 }
-nav a:hover {
-    color: rgb(193, 199, 199);
+.burger{
+    display: flex;
+    gap: 60px;
+    align-items: center;
 }
-.list{
+nav a:hover {
+    color: rgb(156, 160, 160);
+}
+.get{
     display: flex;
     flex-direction: column;
+}
+.menu div{
+      width: 25px;
+      height: 3px;
+      background-color: rgb(75, 71, 71);
+      margin: 5px;
+
+      
+}
+.menu{
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-left:90px ;
 }
 .wrapper-2{
     background-color:#d0f0f5;
@@ -272,7 +297,44 @@ footer{
     .header{
         padding-left:15px ;
     }
+    .burger{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(255, 203, 203, 0.934);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        transform: translateX(100%) ;
+        transition:0.5s ease-in
 
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin: auto;
+
+    }
+    .menu{
+        display: block;
+
+    }
+   
+    /* header label{
+        display: block;
+
+    }
+    ul{
+        display: none;
+    } */
+    .nav-active{
+        transform: translateX(0%) ;
+    }
     .wrapper-2{
         margin-top: 30px;
     }

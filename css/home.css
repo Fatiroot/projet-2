@@ -57,18 +57,6 @@ li{
     padding-left: 30px;
 }
 
-/* header label{
-    display: none;
-}
-
- header label::before{
-    content: "\f0c9 ";
-    font-family: "FontAwesome";
-    font-size: 30px;
-   cursor: pointer;
-    
- } */
-
 nav a {
      position: relative; 
     margin-left: 0px;
@@ -76,12 +64,33 @@ nav a {
     font-size: 20px;
     transition: 0.3s;
 }
+.burger{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
 nav a:hover {
     color: rgb(156, 160, 160);
 }
 .get{
     display: flex;
     flex-direction: column;
+    
+}
+.menu div{
+      width: 25px;
+      height: 3px;
+      background-color: rgb(75, 71, 71);
+      margin: 5px;
+
+      
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-left:90px ;
 }
 .titre1 {
     padding-top:  90px;
@@ -288,16 +297,38 @@ padding-bottom: 60px;
     .header{
         padding-left:15px ;
     }
+    .burger{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(255, 203, 203, 0.934);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        transform: translateX(100%) ;
+        transition:0.5s ease-in
 
-   
-    /* header label{
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin: auto;
+
+    }
+    
+    .menu{
         display: block;
 
     }
-    ul{
-        display: none;
-    } */
-    
+
+    .nav-active{
+        transform: translateX(0%) ;
+    }
     .home{
         background-color: #FEEADA ;
         padding: 10px;

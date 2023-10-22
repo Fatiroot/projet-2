@@ -1,50 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border:1px solid palevioletred ;
-
+    box-sizing: border-box;
+   
 } 
-
-main {
-    overflow-x: hidden;
-}
-
 .header {
     position: fixed;
     top: 0;
     left: 0;
-     width: 100%; 
+    width: 100%;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
     background-color: #fff;
- 
-
  }
+
 a {
     text-decoration: none;
 } 
 img{
     max-width: 100%;
 }
-
 nav{
     display: flex;
-    max-width: 100%;
+    width: 100%;
     max-width: 1300px;
-     margin: 0 auto; 
+    margin: 0 auto;
     justify-content: space-between; 
-}
-ul {
-    display: flex;
-    list-style: none;
-  
 }
 .logo{
     display: flex;
@@ -52,55 +40,82 @@ ul {
     gap:20px;
 }
 .logo a {
-     position: relative; 
+    position: relative;
     color: black;
     font-size: 20px;
 }
- .logo > a {
+.logo > a {
     margin-right: 100px;
-} 
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding-left: 30px;
+}
+
 nav a {
-    position: relative; 
+     position: relative; 
     margin-left: 0px;
     color: black;
     font-size: 20px;
     transition: 0.3s;
 }
-nav a:hover {
-    color: rgb(158, 163, 163);
+.burger{
+    display: flex;
+    gap: 60px;
+    align-items: center;
 }
-
-
+nav a:hover {
+    color: rgb(156, 160, 160);
+}
 .get{
     display: flex;
     flex-direction: column;
 }
-.info{
-    margin-top: 120px;
-    width: 100%;
+.menu div{
+      width: 25px;
+      height: 3px;
+      background-color: rgb(75, 71, 71);
+      margin: 5px;
+
+      
 }
+.menu{
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-left:90px ;
+}
+.info{
+    padding-top: 120px;
+} 
 .info h1{
 text-align: center;
 font-size: 50px;
 
 }
-.info div{
+.source{
     margin-top: 40px;
     display: flex;
-    align-items: center;
+    /* padding-top: 70px; */
+    align-items: center; 
     justify-content: space-evenly;
     /* gap: 150px; */
 
 }
-.info div img{
+.link1 img{
     width: 100%;
     
 }
-.info div p{
+.link1 p{
     font-size: 20px;
 
 }
-.info div div{
+.link1{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -108,11 +123,13 @@ font-size: 50px;
 .blog-1{
     margin-top: 90px;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* gap: 50px; */
+     /* flex-wrap: wrap; 
+    gap: 50px;  */
+    justify-content: center;
     background-color:#FFE39A;
     padding-top: 50px;
     width: 100%;
+  
 }
 .box-1{
     width: 100%;
@@ -138,6 +155,9 @@ font-size: 50px;
     border-radius: 5px;
 
 }
+.form-1> div{
+    margin-inline: 20px;
+}
 .form-1> h1{
     margin-top: 15px;
     font-size: 60px;
@@ -146,47 +166,46 @@ font-size: 50px;
     margin-bottom: 10px;
 }
 .label{
+    width: 100%;
     font-size: 30px;
     margin-bottom: 10px;
-    margin-left: 20px;
     color: rgb(48, 46, 46);
 }
 .int-1{
-   border: 2px;
-   width: 850px;
-   height: 75px;
+    border: none; 
+   width: 600px;
+   height: 50px;
    border-radius: 5px;
    margin-bottom: 30px;
    margin-inline: auto;
    padding: 10px;
-   margin-left: 20px;
+
+
   
 }
 textarea{
-    border: 2px;
-   width: 850px;
-   height: 250px;
+    border: none;
+   width: 600px;
    border-radius: 5px;
    margin-bottom: 50px;
    margin-inline: auto;
    font-size: 20px;
    padding: 10px;
-   margin-left: 20px;
+
 }
 
 .int-2{
-    border: 2px;
+    font-size: 14px;
+    border: none;
     width: 170px;
-    height: 75px;
+    height: 70px;
     border-radius: 5px;
     margin-bottom: 30px;
     color:#0a0a0a;
     font-size: 30px;
     font-weight: 600;
-    margin-left: 220px;
     transition: ease .20s;
     cursor: pointer;
-    margin-inline: 340px;
     background-color: white;
 
 }
@@ -270,7 +289,7 @@ footer{
     color: black ;
      font-size: 20px;
     
- }
+ } 
 .lien{
     color: black;
     line-height: 2;
@@ -287,8 +306,40 @@ footer{
     .header{
         padding-left:15px ;
     }
+    .burger{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(255, 203, 203, 0.934);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        transform: translateX(100%) ;
+        transition:0.5s ease-in
+
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin: auto;
+
+    }
+    
+    .menu{
+        display: block;
+
+    }
+
+    .nav-active{
+        transform: translateX(0%) ;
+    }
     .info{
-        margin-top: 120px;
+        margin-top: 20px;
     }
     .info h1{
         font-size: 30px;
@@ -324,16 +375,16 @@ footer{
     }
     .int-1{
        border: 2px;
-       width: 350px;
-       height: 50px;
+       width: 300px;
+       height: 30px;
         margin-left: 20px;
         }
     textarea{
         border: 2px;
-        width: 350px;
+        width: 300px;
         height: 150px;
         font-size: 20px;
-        margin-left: 20px;
+        margin-inline: 20px;
     }
     
     .int-2{
@@ -374,8 +425,8 @@ footer{
         } 
      
 }
-@media (max-width:1000px) {
-    .wrapper div img {
+@media (max-width:900px) {
+    .box-1 {
         display: none;
     }
     .container {
@@ -386,47 +437,3 @@ footer{
         display: block;
     }
 }
-@media (max-width:1500px){
-
- .box-1{
-        display: none;
-    } 
-}
-@media (max-width:860px){
-    .form-1{
-        width: 100%;
-        gap: 10px;
-    }
-    .form-1> h1{
-        font-size: 20px;
-       
-    }
-    .label{
-        font-size: 14px;
-        margin-left: 20px;
-
-    }
-    .int-1{
-       border: 2px;
-       width: 350px;
-       height: 50px;
-        margin-left: 20px;
-        }
-    textarea{
-        border: 2px;
-        width: 350px;
-        height: 150px;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    
-    .int-2{
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-        font-weight: 500;
-        margin-left: 20px;
-        
-    }
-
-   }
