@@ -453,7 +453,7 @@ p{
         width: 40%;
     } 
 }
-@media (max-width:1000px) {
+@media (max-width:1055px) {
     .wrapper div img {
         display: none;
     }

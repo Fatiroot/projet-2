@@ -8,10 +8,12 @@
     Length: 784 pages">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script scr="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/support.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <nav>
@@ -40,147 +42,169 @@
                 <div class="line"></div>
             </div>
         </nav>
-        <script src="main.js"></script>  
         </nav>
     </header>
-        <div class="info">
-            <h1>Get in touch</h1>
-            <div class="source">
-                <div class="link1">
-                    <img src="img/icons8-phone-48.png" alt="#">
+    <div class="info">
+        <h1>Get in touch</h1>
+        <div class="source">
+            <div class="link1">
+                <div class="contact">
+                    <img src="img/icons8-phone-48.png" alt="#" style="width: 90px;">
                     <p>PHONE <i class="fa-solid fa-caret-down"></i></p>
-
                 </div>
-                <div class="link1">
-                    <img src="img/icons8-email-48.png" alt="#">
+                <div class="more">
+                    <p>Get your info tests delivered at
+                        home collect a sample from the
+                        your pogress tests.</p>
+                </div>
+            </div>
+            <div class="link1">
+                <div class="contact">
+                    <img src="img/icons8-email-48.png" alt="#" style="width: 90px;">
                     <p>EMAIL <i class="fa-solid fa-caret-down"></i></p>
-
                 </div>
-                <div class="link1">
-                    <img src="img/icons8-address-100.png" alt="">
+                <div class="more">
+                    <p>Get your info tests delivered at
+                        home collect a sample from the
+                        your pogress tests.</p>
+                </div>
+            </div>
+            <div class="link1">
+                <div class="contact">
+                    <img src="img/icons8-address-100.png" alt="" style="width: 90px;">
                     <p>ADDRESS <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="more">
+                    <p>Get your info tests delivered at
+                        home collect a sample from the
+                        your pogress tests.</p>
                 </div>
             </div>
         </div>
-        <section class="blog-1">
-            <div class="box-1">
-                <div></div>
-                <h1 class="texte-1">We Are Here For You</h1>
-                <img class="box-1-img" src="img/52361.png" alt="#">
-                <div>
-                    <p class="paragraphe-1"> We can help. Our team of <br>
-                        experts is on hand to answer <br>your quetion.</p>
-                </div>
+    </div>
+    <script src="main.js"></script>
+    <section class="blog-1">
+        <div class="box-1">
+            
+            <h1 class="texte-1">We Are Here For You</h1>
+            <img class="box-1-img" src="img/52361.png" alt="#">
+            <div>
+                <p class="paragraphe-1"> We can help. Our team of <br>
+                    experts is on hand to answer <br>your quetion.</p>
             </div>
-            <form class="form-1">
-                <h1>Contact Us</h1>
-                <div >
-                    <label class="label">Your full name</label>
-                    <br>
-                    <input class="int-1" type="text">
-                    <br>
+        </div>
+        <form class="form-1" id="form">
+            <h1>Contact Us</h1>
+            <div class="input-group">
+                <label class="label">Your full name</label>
+                <br>
+                <input id="namec" class="int-1" type="text" placeholder="enter your name" >
+                <span id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <label class="label">Your phone number</label>
+                <br>
+                <input id="phonec" class="int-1" type="text" placeholder="1234567890">
+                <span id="phone-error"></span>
+            </div>
+            <div class="input-group">
+                <label class="label">Your Email</label>
+                <br>
+                <input id="emailc" class="int-1" type="email" placeholder="enter your email">
+                <span id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <label class="label">Your message</label>
+                <br>
+                <textarea id="messagec" cols="40" rows="10" placeholder="enter your message"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <input id="submitc" class="int-2" type="submit" value="Send">
+            <span id="submit-error"></span>
+        </form>
+
+    </section>
+    <script src="validate.js"></script>
+    <section class="wrapper">
+        <div>
+            <img src="img/Group75.png" alt="#">
+        </div>
+        <div class="container">
+            <div>
+                <h3>Like our service? Subscribe us</h3>
+                <p>We have more than thaousand of creative entreperneurs <br> and satat joining our business</p>
+            </div>
+            <form>
+                <div class="div-sub">
+                    <input class="input-1" type="email" placeholder="Enter Email address">
+                    <input class="input-2" type="submit" value="Subscribe">
                 </div>
                 <div>
-                    <label class="label">Your phone number</label>
-                    <br>
-                    <input class="int-1" type="text">
-                    <br>
-
-
-                    <label class="label">Your Email</label>
-                    <br>
-                    <input class="int-1" type="email">
-                    <br>
-                    <label class="label">Your message</label>
-                    <br>
-                    <textarea cols="40" rows="10"></textarea>
-                    <br>
-                    <input class="int-2" type="submit" value="Send">
-
+                    <input class="input-3" type="checkbox">
+                    <label>Dont provide any promotional message</label>
+                </div>
             </form>
-
-
-        </section>
-        <section class="wrapper">
-            <div>
-                <img src="img/Group75.png" alt="#">
-            </div>
-            <div class="container">
+        </div>
+        <div>
+            <img src="img/Group76(1).png" alt="#">
+        </div>
+    </section>
+    <footer>
+        <section class="foot">
+            <div class="list1">
+                <div class="logo-2">
+                    <img src="img/S1.png" alt="#">
+                    <a class="main " href="#">Innovation</a>
+                </div>
                 <div>
-                    <h3>Like our service? Subscribe us</h3>
-                    <p>We have more than thaousand of creative entreperneurs <br> and satat joining our business</p>
+                    <p> Terms of use | Privacy</p>
                 </div>
-                <form>
-                    <div class="div-sub">
-                        <input class="input-1" type="email" placeholder="Enter Email address">
-                        <input class="input-2" type="submit" value="Subscribe">
-                    </div>
-                    <div>
-                        <input class="input-3" type="checkbox">
-                        <label>Dont provide any promotional message</label>
-                    </div>
-                </form>
+                <div>
+                    <p>Copyright by 2019 YourName, Inc</p>
+                </div>
             </div>
-            <div>
-                <img src="img/Group76(1).png" alt="#">
+            <div class="list">
+                <div><a class="main" href="#">About Us</a></div>
+                <div><a class="lien" href="#">suppor Center</a></div>
+                <div><a class="lien" href="#">Customer</a></div>
+                <div><a class="lien" href="#">About Us</a></div>
+                <div><a class="lien" href="#">Copyright</a></div>
+            </div>
+            <div class="list">
+                <div><a class="main" href="#">Our information</a></div>
+                <div><a class="lien" href="#">Return Policy</a></div>
+                <div><a class="lien" href="#">Privacy Policy</a></div>
+                <div><a class="lien" href="#">Terms & Conditions</a></div>
+                <div><a class="lien" href="#">Site Map</a></div>
+            </div>
+            <div class="list">
+                <div><a class="main" href="#">My Account </a></div>
+                <div><a class="lien" href="#">Press inquiries</a></div>
+                <div><a class="lien" href="#">Social medi</a></div>
+                <div><a class="lien" href="#">Directories</a></div>
+                <div><a class="lien" href="#">Images & B-roll</a></div>
+            </div>
+            <div class="list">
+                <div><a class="main" href="#">Connect</a></div>
+                <div class="site">
+                    <img src="img/Group78.png" alt="#">
+                    <a class="lien" href="#">Facebook</a>
+                </div>
+                <div class="site">
+                    <img src="img/Group.png" alt="#">
+                    <a class="lien" href="#">Twitter</a>
+                </div>
+                <div class="site">
+                    <img src="img/Vector(11).png" alt="#">
+                    <a class="lien" href="#">Github</a>
+                </div>
+                <div class="site">
+                    <img src="img/Group81.png" alt="#">
+                    <a class="lien" href="#">Dribble</a>
+                </div>
             </div>
         </section>
-        <footer>
-            <section class="foot">
-                <div class="list1">
-                    <div class="logo-2">
-                        <img src="img/S1.png" alt="#">
-                        <a class="main " href="#">Innovation</a>
-                    </div>
-                    <div>
-                        <p> Terms of use | Privacy</p>
-                    </div>
-                    <div>
-                        <p>Copyright by 2019 YourName, Inc</p>
-                    </div>
-                </div>
-                <div class="list">
-                    <div><a class="main" href="#">About Us</a></div>
-                    <div><a class="lien" href="#">suppor Center</a></div>
-                    <div><a class="lien" href="#">Customer</a></div>
-                    <div><a class="lien" href="#">About Us</a></div>
-                    <div><a class="lien" href="#">Copyright</a></div>
-                </div>
-                <div class="list">
-                    <div><a class="main" href="#">Our information</a></div>
-                    <div><a class="lien" href="#">Return Policy</a></div>
-                    <div><a class="lien" href="#">Privacy Policy</a></div>
-                    <div><a class="lien" href="#">Terms & Conditions</a></div>
-                    <div><a class="lien" href="#">Site Map</a></div>
-                </div>
-                <div class="list">
-                    <div><a class="main" href="#">My Account </a></div>
-                    <div><a class="lien" href="#">Press inquiries</a></div>
-                    <div><a class="lien" href="#">Social medi</a></div>
-                    <div><a class="lien" href="#">Directories</a></div>
-                    <div><a class="lien" href="#">Images & B-roll</a></div>
-                </div>
-                <div class="list">
-                    <div><a class="main" href="#">Connect</a></div>
-                    <div class="site">
-                        <img src="img/Group78.png" alt="#">
-                        <a class="lien" href="#">Facebook</a>
-                    </div>
-                    <div class="site">
-                        <img src="img/Group.png" alt="#">
-                        <a class="lien" href="#">Twitter</a>
-                    </div>
-                    <div class="site">
-                        <img src="img/Vector(11).png" alt="#">
-                        <a class="lien" href="#">Github</a>
-                    </div>
-                    <div class="site">
-                        <img src="img/Group81.png" alt="#">
-                        <a class="lien" href="#">Dribble</a>
-                    </div>
-                </div>
-            </section>
-        </footer>
+    </footer>
     </main>
 </body>
 
