@@ -157,7 +157,7 @@ i{
 .blog-1{
     background-color: rgba(248, 247, 243, 0.859);
     width: 60%;
-     height: 650px;
+     height: 700px;
     margin:50px auto;
     display: flex;
     gap: 50px;
@@ -333,10 +333,10 @@ footer {
     .header {
         padding-left: 15px;
     }
-    .blog-1{
+    /* .blog-1{
         width: 80%;
         height: 600px;
-    }
+    } */
     .burger {
         position: absolute;
         right: 0px;
@@ -452,6 +452,20 @@ footer {
     }
     .wrapper{
         display: block;
+    }
+}
+@media (max-width:1080px ) {
+    .form-1{
+        margin: auto;
+        width: 80%;
+    }
+     .box-1 {
+        width: 50%;
+
+    } 
+
+    .blog-1{
+        width: 90%;
     }
 }
 
