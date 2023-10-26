@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     // slidesPerView: 3,
-    disableOnInteraction: false,
+    // disableOnInteraction: false,
       breakpoints: {
         600: {
           slidesPerView: 1,

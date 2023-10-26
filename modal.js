@@ -13,21 +13,14 @@ for (let index = 0; index < list_btn.length; index++) {
         if(index==3) service="lorem4";
         if(index==4) service="lorem5";
         if(index==5) service="lorem6";
-        // other services
         document.getElementById("p_more").textContent=service;
     });
     
 }
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
