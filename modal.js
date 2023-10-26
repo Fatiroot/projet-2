@@ -7,15 +7,14 @@ for (let index = 0; index < list_btn.length; index++) {
     list_btn[index].addEventListener("click",()=>{
         modal.style.display = "block";
         var service;
-        if(index==0) service="lorem1";
-        if(index==1) service="lorem2";
-        if(index==2) service="lorem3";
-        if(index==3) service="lorem4";
-        if(index==4) service="lorem5";
-        if(index==5) service="lorem6";
+        if(index==0) service="lorem 1";
+        if(index==1) service="lorem 2";
+        if(index==2) service="lorem 3";
+        if(index==3) service="lorem 4";
+        if(index==4) service="lorem 5";
+        if(index==5) service="lorem 6";
         document.getElementById("p_more").textContent=service;
-    });
-    
+    });   
 }
 span.onclick = function() {
   modal.style.display = "none";

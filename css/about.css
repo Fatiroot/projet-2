@@ -90,8 +90,6 @@ nav a:hover {
       height: 3px;
       background-color: rgb(75, 71, 71);
       margin: 5px;
-
-      
 }
 .menu{
     cursor: pointer;
@@ -369,9 +367,6 @@ body {
   
   }
   
-
-
-
 .wrapper {
     background-color: #F4ECE5;
     display: grid;
