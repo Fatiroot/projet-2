@@ -5,7 +5,7 @@ fournir une plateforme interactive réactivet afin d'améliorer l'expérience de
 
 ## Exigences
 
-- Un navigateur web moderne tel que Chrome, Firefox ou Safari.
+- Un navigateur web moderne tel que Chrome, edg,Firefox ou Safari.
 - Une connexion Internet pour accéder au site.
 ## Structure des Fichiers
 
