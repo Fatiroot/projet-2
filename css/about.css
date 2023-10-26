@@ -366,7 +366,6 @@ body {
     align-items: center;
   
   }
-  
 .wrapper {
     background-color: #F4ECE5;
     display: grid;
@@ -516,6 +515,12 @@ body {
     .container-1 p{
         font-size: 12px;
     }
+    .swiper-button-next{
+        display: none;
+      }
+      .swiper-button-prev{
+        display: none;
+      }
     .wrapper-2{
         margin-top: 50px;
     }
