@@ -95,7 +95,6 @@ nav a:hover {
     margin-top: 100px;
     padding-bottom: 80px;
     padding-top: 100px;
-    padding-right:80px ;
 
 }
 .blog-1{
@@ -367,40 +366,11 @@ footer{
     .header{
         padding-left:15px ;
     }
-    .burger{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: rgba(255, 203, 203, 0.934);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-        transform: translateX(100%) ;
-        transition:0.5s ease-in
-
-    }
-    .nav-links{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-        margin: auto;
-
-    }
-    .menu{
-        display: block;
-
-    }
    
-   
-    .nav-active{
-        transform: translateX(0%) ;
-    }
     .wrapper-2{
         margin-top: 30px;
+         padding-bottom: 10px;
+           
     }
     .blog-1{
         margin-left: 15px;
@@ -476,6 +446,40 @@ footer{
         padding-left: 10px;
         width: 40%;
     } 
+    }
+    @media (max-width:900px) {
+        .burger{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: rgba(255, 203, 203, 0.934);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            transform: translateX(100%) ;
+            transition:0.5s ease-in
+    
+        }
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            margin: auto;
+    
+        }
+       
+        .menu{
+            display: block;
+    
+        }
+      
+        .nav-active{
+            transform: translateX(0%) ;
+        }
     }
     @media (max-width:1000px) {
         
